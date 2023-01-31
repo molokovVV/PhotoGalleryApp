@@ -10,7 +10,6 @@
 		04E85EF229893970004AB74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF129893970004AB74E /* AppDelegate.swift */; };
 		04E85EF429893970004AB74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF329893970004AB74E /* SceneDelegate.swift */; };
 		04E85EF629893970004AB74E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF529893970004AB74E /* ViewController.swift */; };
-		04E85EF929893970004AB74E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85EF729893970004AB74E /* Main.storyboard */; };
 		04E85EFB29893971004AB74E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E85EFA29893971004AB74E /* Assets.xcassets */; };
 		04E85EFE29893971004AB74E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E85EFC29893971004AB74E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		04E85EF129893970004AB74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E85EF329893970004AB74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		04E85EF529893970004AB74E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04E85EF829893970004AB74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04E85EFA29893971004AB74E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04E85EFD29893971004AB74E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E85EFF29893971004AB74E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,6 +35,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04214D112989463E00F27E88 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				04E85EFF29893971004AB74E /* Info.plist */,
+				04E85EFC29893971004AB74E /* LaunchScreen.storyboard */,
+				04E85EFA29893971004AB74E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		04214D122989464C00F27E88 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				04E85EF529893970004AB74E /* ViewController.swift */,
+				04214D132989465C00F27E88 /* App */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		04214D132989465C00F27E88 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				04E85EF129893970004AB74E /* AppDelegate.swift */,
+				04E85EF329893970004AB74E /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		04E85EE529893970004AB74E = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +82,8 @@
 		04E85EF029893970004AB74E /* PhotoGalleryApp */ = {
 			isa = PBXGroup;
 			children = (
-				04E85EF129893970004AB74E /* AppDelegate.swift */,
-				04E85EF329893970004AB74E /* SceneDelegate.swift */,
-				04E85EF529893970004AB74E /* ViewController.swift */,
-				04E85EF729893970004AB74E /* Main.storyboard */,
-				04E85EFA29893971004AB74E /* Assets.xcassets */,
-				04E85EFC29893971004AB74E /* LaunchScreen.storyboard */,
-				04E85EFF29893971004AB74E /* Info.plist */,
+				04214D122989464C00F27E88 /* Sources */,
+				04214D112989463E00F27E88 /* Resources */,
 			);
 			path = PhotoGalleryApp;
 			sourceTree = "<group>";
@@ -127,7 +148,6 @@
 			files = (
 				04E85EFE29893971004AB74E /* LaunchScreen.storyboard in Resources */,
 				04E85EFB29893971004AB74E /* Assets.xcassets in Resources */,
-				04E85EF929893970004AB74E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,14 +167,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04E85EF729893970004AB74E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04E85EF829893970004AB74E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04E85EFC29893971004AB74E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,10 +301,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoGalleryApp/Info.plist;
+				INFOPLIST_FILE = PhotoGalleryApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -317,10 +328,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = TBKRN76F6S;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PhotoGalleryApp/Info.plist;
+				INFOPLIST_FILE = PhotoGalleryApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
