@@ -14,12 +14,12 @@ struct CompositionalModel: Hashable {
 
 extension CompositionalModel {
     static let modelsArray = [
-        [CompositionalModel(description: nil, image: UIImage(named: "Recents")),
-         CompositionalModel(description: nil, image: UIImage(named: "Favourites")),
-         CompositionalModel(description: nil, image: UIImage(named: "GoPro")),
-         CompositionalModel(description: nil, image: UIImage(named: "DJI")),
-         CompositionalModel(description: nil, image: UIImage(named: "Instagram")),
-         CompositionalModel(description: nil, image: UIImage(named: "WhatsApp"))
+        [CompositionalModel(description: "Recents", image: UIImage(named: "Recents")),
+         CompositionalModel(description: "Favourites", image: UIImage(named: "Favourites")),
+         CompositionalModel(description: "GoPro", image: UIImage(named: "GoPro")),
+         CompositionalModel(description: "DJI", image: UIImage(named: "DJI")),
+         CompositionalModel(description: "Instagram", image: UIImage(named: "Instagram")),
+         CompositionalModel(description: "WhatsApp", image: UIImage(named: "WhatsApp"))
         ],
         [CompositionalModel(description: "Videos", image: UIImage(systemName: "video")),
          CompositionalModel(description: "Selfies", image: UIImage(systemName: "person.crop.square")),

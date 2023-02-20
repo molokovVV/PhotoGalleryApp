@@ -21,6 +21,18 @@ class MyAlbumCell: UICollectionViewCell {
         return imageView
     }()
     
+    private let footerLabel: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        label.textColor = .black
+        return label
+    }()
+    
+    private let containerView: UIView = {
+        let view = UIView()
+        return view
+    }()
+    
     // MARK: - Initializers
     
     override init(frame: CGRect) {
@@ -37,12 +49,23 @@ class MyAlbumCell: UICollectionViewCell {
     // MARK: - Setup
     
     private func setupHierarchy() {
+        contentView.addSubview(containerView)
         contentView.addSubview(image)
+        containerView.addSubview(footerLabel)
     }
     
     private func setupLayout() {
+        containerView.snp.makeConstraints { make in
+            make.left.right.bottom.equalToSuperview()
+            make.height.equalTo(17)
+        }
+        
         image.snp.makeConstraints { make in
-            make.left.top.right.bottom.equalTo(contentView)
+            make.left.right.top.equalToSuperview()
+            make.height.equalTo(180)
+        }
+        footerLabel.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
         }
     }
     
@@ -50,10 +73,12 @@ class MyAlbumCell: UICollectionViewCell {
     
     func configure(model: CompositionalModel) {
         self.image.image = model.image
+        self.footerLabel.text = model.description
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
         self.image.image = nil
+        self.footerLabel.text = nil
     }
 }

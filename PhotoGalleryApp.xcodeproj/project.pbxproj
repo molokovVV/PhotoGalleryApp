@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				04A2C7A82995103200D03E95 /* HeaderCollection.swift */,
-				0486C954298AD9E50010A87E /* MediaUtilitiesCell.swift */,
 				0486C952298AD95A0010A87E /* MyAlbumCell.swift */,
+				0486C954298AD9E50010A87E /* MediaUtilitiesCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
