@@ -13,10 +13,10 @@
 		0486C955298AD9E50010A87E /* MediaUtilitiesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0486C954298AD9E50010A87E /* MediaUtilitiesCell.swift */; };
 		04A2C7A92995103200D03E95 /* HeaderCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7A82995103200D03E95 /* HeaderCollection.swift */; };
 		04A2C7B029A2AA5200D03E95 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7AF29A2AA5200D03E95 /* TabBarController.swift */; };
-		04A2C7B429A2B09100D03E95 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7B329A2B09100D03E95 /* LibraryViewController.swift */; };
 		04A2C7B629A2B13E00D03E95 /* ForYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7B529A2B13E00D03E95 /* ForYouViewController.swift */; };
 		04A2C7B829A2B17100D03E95 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7B729A2B17100D03E95 /* SearchViewController.swift */; };
 		04A2C7BA29A3887F00D03E95 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A2C7B929A3887F00D03E95 /* DetailViewController.swift */; };
+		04B4123429A39F860020E174 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4123329A39F860020E174 /* LibraryViewController.swift */; };
 		04E85EF229893970004AB74E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF129893970004AB74E /* AppDelegate.swift */; };
 		04E85EF429893970004AB74E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF329893970004AB74E /* SceneDelegate.swift */; };
 		04E85EF629893970004AB74E /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E85EF529893970004AB74E /* AlbumsViewController.swift */; };
@@ -30,10 +30,10 @@
 		0486C954298AD9E50010A87E /* MediaUtilitiesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaUtilitiesCell.swift; sourceTree = "<group>"; };
 		04A2C7A82995103200D03E95 /* HeaderCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollection.swift; sourceTree = "<group>"; };
 		04A2C7AF29A2AA5200D03E95 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		04A2C7B329A2B09100D03E95 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		04A2C7B529A2B13E00D03E95 /* ForYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForYouViewController.swift; sourceTree = "<group>"; };
 		04A2C7B729A2B17100D03E95 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		04A2C7B929A3887F00D03E95 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04B4123329A39F860020E174 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		04E85EEE29893970004AB74E /* PhotoGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E85EF129893970004AB74E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E85EF329893970004AB74E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		04A2C7B229A2AFC200D03E95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				04A2C7B329A2B09100D03E95 /* LibraryViewController.swift */,
+				04B4123329A39F860020E174 /* LibraryViewController.swift */,
 				04A2C7B529A2B13E00D03E95 /* ForYouViewController.swift */,
 				04E85EF529893970004AB74E /* AlbumsViewController.swift */,
 				04A2C7B729A2B17100D03E95 /* SearchViewController.swift */,
@@ -242,8 +242,8 @@
 				0486C94529894F2E0010A87E /* Model.swift in Sources */,
 				04E85EF229893970004AB74E /* AppDelegate.swift in Sources */,
 				04E85EF429893970004AB74E /* SceneDelegate.swift in Sources */,
-				04A2C7B429A2B09100D03E95 /* LibraryViewController.swift in Sources */,
 				04A2C7B629A2B13E00D03E95 /* ForYouViewController.swift in Sources */,
+				04B4123429A39F860020E174 /* LibraryViewController.swift in Sources */,
 				04A2C7A92995103200D03E95 /* HeaderCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
